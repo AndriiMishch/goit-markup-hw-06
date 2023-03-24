@@ -698,3 +698,149 @@ body {
 .modal-close:is(:hover, :focus) {
   color: var(--Hero-text-color);
 }
+
+.modal-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24/16);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--Hero-background-color);
+  padding-top: 72px;
+  padding-bottom: 16px;
+}
+
+.form-input{
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 38px;
+  outline: transparent;
+}
+
+.form-input:is(:hover, :focus) {
+  border: 1px solid var(--Primary-brand-color);
+  border-radius: 4px;
+}
+
+.form-input:is(:hover, :focus) + .form-icon {
+  fill: var();
+}
+
+.form-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: var(--Hero-text-color);
+  background: var(--Primary-brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  border: none;
+}
+
+.form-btn:is(:hover, :focus) {
+  cursor: pointer;
+  background: var(--Pressed-state-color);
+}
+
+.form-text span {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: var(--Subtle-text-color);
+  padding-bottom: 4px;
+  display: block;
+}
+
+.form-input::placeholder {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+.form-group {
+  padding-bottom: 8px;
+}
+
+.form-control {
+  position: relative;
+}
+
+.form-icon {
+  left: 16px;
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.form-feedback {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 16px;
+  padding-top: 8px;
+  height: 120px;
+}
+
+.form-checkbox-text {
+  font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.04em;
+color: #757575;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.form-checkbox-group {
+  padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-btn-group {
+  text-align: center;
+}
+
+.form-input:focus {
+  border-color: var(--Primary-brand-color);
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--Primary-brand-color);
+}
+
+.form-lable-checkbox {
+  font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.04em;
+color: #757575;
+flex: none;
+order: 1;
+flex-grow: 0;
+  display: flex;
+  align-items: center;
+}
+
+.form-lable-checkbox::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+}
