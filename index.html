@@ -29,11 +29,17 @@
               >
             </li>
             <li>
-              <a href="./portfolio.html" class="transition header-link link header-nav"
+              <a
+                href="./portfolio.html"
+                class="transition header-link link header-nav"
                 >Portfolio</a
               >
             </li>
-            <li><a href="" class="transition header-link link header-nav">Contacts</a></li>
+            <li>
+              <a href="" class="transition header-link link header-nav"
+                >Contacts</a
+              >
+            </li>
           </ul>
         </nav>
         <div class="additional-nav">
@@ -62,9 +68,10 @@
       <section class="hero-main">
         <div class="container">
           <h1 class="hero-hover">Effective Solutions for Your Business</h1>
-          <button data-modal-open type="button" class="transition hero-btn">Order Service</button>
+          <button data-modal-open type="button" class="transition hero-btn">
+            Order Service
+          </button>
         </div>
-
       </section>
 
       <section class="advantages">
@@ -76,6 +83,7 @@
                 <svg class="advantages-icon">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
+                
               </div>
               <h3 class="advantages-hover">Strategy</h3>
               <p class="advantages-text">
@@ -445,12 +453,70 @@
     </footer>
     <div data-modal class="backdrop container is-hidden">
       <div class="modal container">
-        <button data-modal-close type="button" class="transition modal-close ">   
+        <button data-modal-close type="button" class="transition modal-close">
           <svg class="modal-close-icon">
             <use href="./images/symbol-defs.svg#icon-close-x"></use>
           </svg>
         </button>
+        <h3 class="modal-title">
+          Leave your contacts and we will call you back
+        </h3>
+        <form class="modal-form form">
+          <div class="form-group">
+            <label class="form-text">
+              <span class="form-text-span">Name</span>
+              <div class="form-control">
+                <input type="name" class="form-input" name="name" />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-text">
+              <span class="form-text-span">Phone</span>
+              <div class="form-control">
+                <input type="phone" class="form-input" name="phone" />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-text">
+              <span class="form-text-span">Email</span>
+              <div class="form-control">
+                <input type="email" class="form-input" name="email" />
+                <svg class="form-icon">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-text">
+              <span class="form-text-span">Comment</span>
+              <div class="form-control">
+                <textarea
+                  name="feedback"
+                  id=""
+                  cols="30"
+                  rows="5"
+                  class="form-feedback"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+            </label>
+          </div>
+          <div class="form-checkbox-group">
 
+            <input type="checkbox" id="accept" name="accept" class="form-checkbox "/>
+            <label for="accept" class="form-label-checkbox">I accept the terms and conditions of the <a href="#"> Privacy Policy</a></label></div>
+          <div class="form-btn-group">
+          <button type="submit" class="transition form-btn">Send</button></div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
