@@ -447,6 +447,22 @@
                 </a>
               </li>
             </ul>
+            <li>
+              <p class="footer-form-text-span">Subscribe</p>
+              <form action="">
+                <div class="footer-form-group">
+                  <label class="footer-form-text">
+                    <input type="text" placeholder="E-mail" class="footer-form-input">
+                  </label>
+                  <button class="footer-form-btn">Subscribe                   
+                    <svg class="footer-form-icon">
+                      <use href="./images/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                  </button>
+
+                </div>
+              </form>
+            </li>
           </li>
         </ul>
       </div>
@@ -466,7 +482,7 @@
             <label class="form-text">
               <span class="form-text-span">Name</span>
               <div class="form-control">
-                <input type="name" class="form-input" name="name" />
+                <input type="name" class="form-input" name="name" required/>
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
@@ -477,7 +493,7 @@
             <label class="form-text">
               <span class="form-text-span">Phone</span>
               <div class="form-control">
-                <input type="phone" class="form-input" name="phone" />
+                <input type="phone" class="form-input" name="phone" required />
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
@@ -488,7 +504,7 @@
             <label class="form-text">
               <span class="form-text-span">Email</span>
               <div class="form-control">
-                <input type="email" class="form-input" name="email" />
+                <input type="email" class="form-input" name="email"  required/>
                 <svg class="form-icon">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
@@ -511,9 +527,9 @@
             </label>
           </div>
           <div class="form-checkbox-group">
-
-            <input type="checkbox" id="accept" name="accept" class="form-checkbox "/>
-            <label for="accept" class="form-label-checkbox">I accept the terms and conditions of the <a href="#"> Privacy Policy</a></label></div>
+            <input type="checkbox" name="policy" id="policy" class="form-checkbox is-hidden"  required>
+            <label for="policy" class="form-lable-checkbox">I accept the terms and conditions of the <a href="#" class="checkbox-policy-link"> Privacy Policy</a> </label>
+            </div>
           <div class="form-btn-group">
           <button type="submit" class="transition form-btn">Send</button></div>
         </form>
